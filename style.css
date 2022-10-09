@@ -1,6 +1,17 @@
+html {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(black, black), url(images/wave-min.webp) no-repeat;
+  background-blend-mode: saturation;
+  background-size: cover;
+}
+
 body {
-  background-color: black;
   font-family: "Inter", sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 /*HEADER*/
@@ -17,6 +28,8 @@ body {
   background-color: #fff;
   width: 50%;
   padding: 20px 0 20px 0;
+  border-bottom: 1px solid #d1d5db;
+  margin-top: 75px;
 }
 
 #seed-color {
@@ -29,12 +42,28 @@ body {
   font-size: 16px;
   padding: 10px 100px 10px 10px;
   border: 1px solid #d1d5db;
+  border-radius: 6px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+}
+
+#select-scheme:hover {
+  box-shadow: none;
+}
+
+select:focus {
+  outline: none;
 }
 
 #getscheme-btn {
   font-family: "Inter", sans-serif;
   font-weight: 500;
   border: 1px solid #d1d5db;
+  border-radius: 4px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+}
+
+#getscheme-btn:hover {
+  box-shadow: none;
 }
 
 /*COLORS*/
@@ -47,8 +76,7 @@ body {
 #colors {
   background-color: #fff;
   width: 50%;
-  height: 550px;
-  border: 1px solid black;
+  height: 500px;
 }
 
 .color-scheme {
@@ -71,7 +99,9 @@ body {
 #hex-codes {
   width: 50%;
   background-color: #fff;
-  padding: 20px 0 20px 0;
+  padding: 35px 0 35px 0;
+  border-top: 1px solid #d1d5db;
+  margin-bottom: 25px;
 }
 
 .hex-scheme {
@@ -81,4 +111,8 @@ body {
 
 .hex {
   font-weight: 500;
+}
+
+p {
+  margin: 0;
 }
