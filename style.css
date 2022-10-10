@@ -12,6 +12,7 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  margin: 0;
 }
 
 /*HEADER*/
@@ -29,12 +30,55 @@ body {
   width: 50%;
   padding: 20px 0 20px 0;
   border-bottom: 1px solid #d1d5db;
-  margin-top: 75px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .header {
+    gap: 10px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .header {
+    gap: 5px;
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .header {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .header {
+    width: 100vw;
+  }
 }
 
 #seed-color {
   width: 60px;
   height: 40px;
+}
+
+@media only screen and (max-width: 1200px) {
+  #seed-color {
+    margin: 8px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  #seed-color {
+    margin: 2px 8px 2px 2px;
+    width: 40px;
+  }
 }
 
 #select-scheme {
@@ -48,6 +92,39 @@ body {
 
 #select-scheme:hover {
   box-shadow: none;
+}
+
+@media only screen and (max-width: 1200px) {
+  #select-scheme {
+    padding: 10px 30px 10px 10px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  #select-scheme {
+    padding: 10px 20px 10px 10px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  #select-scheme {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  #select-scheme {
+    padding: 5px;
+    width: 130px;
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  #select-scheme {
+    width: 100px;
+  }
 }
 
 select:focus {
@@ -66,6 +143,19 @@ select:focus {
   box-shadow: none;
 }
 
+@media only screen and (max-width: 1200px) {
+  #getscheme-btn {
+    margin: 8px;
+    white-space: nowrap;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  #getscheme-btn {
+    font-size: 12px;
+  }
+}
+
 /*COLORS*/
 
 .colors-container {
@@ -76,7 +166,39 @@ select:focus {
 #colors {
   background-color: #fff;
   width: 50%;
-  height: 500px;
+  height: 450px;
+}
+
+@media only screen and (max-width: 1200px) {
+  #colors {
+    height: 400px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  #colors {
+    width: 70%;
+    height: 350px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #colors {
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  #colors {
+    width: 100%;
+    height: 300px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  #colors {
+    width: 100vw;
+  }
 }
 
 .color-scheme {
@@ -86,7 +208,25 @@ select:focus {
 
 .color {
   width: 100%;
-  height: 550px;
+  height: 450px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .color {
+    height: 400px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .color {
+    height: 300px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .color {
+    width: 100vw;
+  }
 }
 
 /*HEX CODES*/
@@ -101,7 +241,30 @@ select:focus {
   background-color: #fff;
   padding: 35px 0 35px 0;
   border-top: 1px solid #d1d5db;
-  margin-bottom: 25px;
+}
+
+@media only screen and (max-width: 900px) {
+  #hex-codes {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #hex-codes {
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  #hex-codes {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  #hex-codes {
+    width: 100vw;
+  }
 }
 
 .hex-scheme {
@@ -115,4 +278,28 @@ select:focus {
 
 p {
   margin: 0;
+}
+
+@media only screen and (max-width: 900px) {
+  p {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  p {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  p {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  p {
+    font-size: 8px;
+  }
 }
