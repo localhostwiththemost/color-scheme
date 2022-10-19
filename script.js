@@ -1,10 +1,10 @@
 "use strict";
 
-const seedColor = document.getElementById("seed-color").value;
-const hexCode = seedColor.substring(1); // Removes # from hex code
-const colorScheme = document.getElementById("select-scheme").value;
-
 document.getElementById("getscheme-btn").addEventListener("click", function () {
+  const seedColor = document.getElementById("seed-color").value;
+  const hexCode = seedColor.substring(1); // Removes # from hex code
+  const colorScheme = document.getElementById("select-scheme").value;
+
   fetch(
     `https://www.thecolorapi.com/scheme?hex=${hexCode}&mode=${colorScheme}&count=5`
   )
